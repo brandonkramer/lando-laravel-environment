@@ -82,12 +82,12 @@ php artisan ui vue --auth
 php artisan ui react --auth
 ```
 After installing the laravel/ui Composer package and generating the frontend scaffolding, Laravel's package.json file will include the bootstrap package to help you get started prototyping your application's frontend using Bootstrap. However, feel free to add or remove packages from the package.json file as needed for your own application. You are not required to use the Bootstrap framework to build your Laravel application - it is provided as a good starting point for those who choose to use it.
-####Database tables
+#### Database tables
 Edit the .env file with your database configuration if you haven't configure it yet. Create database tables from the laravel/ui package:
 ```
 php artisan migrate
 ```
-###Compiling Assets (Mix)
+### ompiling Assets (Mix)
 https://laravel.com/docs/7.x/mix
 
 Before compiling your CSS, install your project's frontend dependencies using the Node package manager (NPM):
