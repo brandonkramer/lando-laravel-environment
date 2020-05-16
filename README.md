@@ -71,7 +71,7 @@ lando composer require laravel/ui
 Once the laravel/ui package has been installed, you may install the frontend scaffolding using the ui Artisan command:
 
 ```
-landoartisan ui bootstrap
+lando artisan ui bootstrap
 lando artisan ui vue
 lando artisan ui react
 ```
