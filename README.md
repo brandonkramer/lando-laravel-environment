@@ -105,3 +105,4 @@ lando npm run watch
 ```
 ## Documentation
 Refer to Lando's extensive [documentation](https://docs.lando.dev/config/laravel.html).
+Refer to Laravel's extensive [documentation](https://laravel.com/docs/7.x).
