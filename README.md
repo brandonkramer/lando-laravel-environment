@@ -32,8 +32,8 @@ port: 3306
 # port: 5432
 ```
 Go to `pma.wp-{project}.lndo.site` to visit PHPMyAdmin and `mail.wp-{project}.lndo.site` to visit MailHog.
-## .Env
- Add following options to your Browsersync script:
+## .env
+ Configuration for Laravel's .env file.
 ``` 
 // Database configuration
 DB_CONNECTION=mysql
