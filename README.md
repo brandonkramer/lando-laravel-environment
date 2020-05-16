@@ -59,6 +59,49 @@ MAIL_FROM_NAME="${APP_NAME}"
 # REDIS_PORT=6379
 
 ```
+## What now?
+While working with Lando for local development; replace php and prefix npm with lando for example `lando artisan migrate` or `lando npm install`
+### Install Authentication
+https://laravel.com/docs/7.x/frontend
 
+Since Laravel 6 the `artisan make:auth` command (Auth scaffolding) has been moved into a separate package. The scaffolding is now located in the laravel/ui Composer package, which may be installed using Composer:
+``` 
+lando composer require laravel/ui
+```
+Once the laravel/ui package has been installed, you may install the frontend scaffolding using the ui Artisan command:
+
+```
+landoartisan ui bootstrap
+lando artisan ui vue
+lando artisan ui react
+```
+Generate login / registration scaffolding...
+```
+php artisan ui bootstrap --auth
+php artisan ui vue --auth
+php artisan ui react --auth
+```
+After installing the laravel/ui Composer package and generating the frontend scaffolding, Laravel's package.json file will include the bootstrap package to help you get started prototyping your application's frontend using Bootstrap. However, feel free to add or remove packages from the package.json file as needed for your own application. You are not required to use the Bootstrap framework to build your Laravel application - it is provided as a good starting point for those who choose to use it.
+####Database tables
+Edit the .env file with your database configuration if you haven't configure it yet. Create database tables from the laravel/ui package:
+```
+php artisan migrate
+```
+###Compiling Assets (Mix)
+https://laravel.com/docs/7.x/mix
+
+Before compiling your CSS, install your project's frontend dependencies using the Node package manager (NPM):
+```
+lando npm install
+```
+
+Once the dependencies have been installed using npm install, you can compile your SASS files to plain CSS using Laravel Mix. The npm run dev command will process the instructions in your webpack.mix.js file. Typically, your compiled CSS will be placed in the public/css directory:
+```
+lando npm run dev
+```
+The npm run watch command will continue running in your terminal and watch all relevant files for changes. Webpack will then automatically recompile your assets when it detects a change:
+```
+lando npm run watch
+```
 ## Documentation
 Refer to Lando's extensive [documentation](https://docs.lando.dev/config/laravel.html).
