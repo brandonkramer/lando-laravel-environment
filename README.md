@@ -87,7 +87,7 @@ Edit the .env file with your database configuration if you haven't configure it 
 ```
 php artisan migrate
 ```
-### ompiling Assets (Mix)
+### Compiling Assets (Mix)
 https://laravel.com/docs/7.x/mix
 
 Before compiling your CSS, install your project's frontend dependencies using the Node package manager (NPM):
