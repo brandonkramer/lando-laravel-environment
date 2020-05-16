@@ -15,7 +15,7 @@ Before you get started with this setup I assume that you have:
 ## Usage  
 1. Configure `.lando.yml`  and replace `{project}` with project name
 1. Specify the desired PHP version, web server and database server
-1. Install Laravel with `lando ssh -c "composer global require laravel/installer && laravel new app`
+1. Install Laravel with `lando ssh -c "composer global require laravel/installer && laravel new app"`
 1. Run the command `lando start` from the project root.
 1. Then visit `laravel-{project}.lndo.site` to see your Laravel project
 
