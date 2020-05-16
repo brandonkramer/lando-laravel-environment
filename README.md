@@ -60,7 +60,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ```
 ## What now?
-While working with Lando for local development; replace php and prefix npm with lando for example `lando artisan migrate` or `lando npm install`
+While writing commands with Lando for local Laravel development; replace php and prefix npm with lando for example `lando artisan migrate` or `lando npm install`
 ### Install Authentication
 https://laravel.com/docs/7.x/frontend
 
