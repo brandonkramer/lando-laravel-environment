@@ -111,6 +111,24 @@ The npm run watch command will continue running in your terminal and watch all r
 ```
 lando npm run watch
 ```
+### Telescope 
+https://laravel.com/docs/7.x/telescope
+
+Laravel Telescope is an elegant debug assistant for the Laravel framework. Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps and more. Telescope makes a wonderful companion to your local Laravel development environment.
+
+You may use Composer to install Telescope into your Laravel project:
+
+```
+lando composer require laravel/telescope
+```
+
+After installing Telescope, publish its assets using the **`telescope:install`** Artisan command. After installing Telescope, you should also run the **`migrate`** command:
+
+```
+lando artisan telescope:install
+lando artisan migrate
+```
+Now you can go to `http://pma.laravel-{project}.lndo.site/telescope`
 ## Documentation
 
 - Refer to Lando's extensive [documentation](https://docs.lando.dev/config/laravel.html).
