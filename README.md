@@ -31,7 +31,7 @@ port: 3306
 # for postgres
 # port: 5432
 ```
-Go to `pma.wp-{project}.lndo.site` to visit PHPMyAdmin and `mail.wp-{project}.lndo.site` to visit MailHog.
+Go to `http://pma.laravel-{project}.lndo.site:8080` to visit PHPMyAdmin and `http://mail.laravel-{project}.lndo.site:8080/` to visit MailHog.
 ## .env
  Configuration for Laravel's .env file.
 ``` 
