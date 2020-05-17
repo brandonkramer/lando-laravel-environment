@@ -71,9 +71,6 @@ cd app
 
 // Install package
 lando composer require laravel/ui
-
-// Run the following to compile your fresh scaffolding.
-lando npm install && lando npm run dev
 ```
 Once the laravel/ui package has been installed, you may install the frontend scaffolding using the ui Artisan command:
 
@@ -87,6 +84,10 @@ Generate login / registration scaffolding...
 php artisan ui bootstrap --auth
 php artisan ui vue --auth
 php artisan ui react --auth
+```
+Run the following to compile your fresh scaffolding.
+```
+lando npm install && lando npm run dev
 ```
 After installing the laravel/ui Composer package and generating the frontend scaffolding, Laravel's package.json file will include the bootstrap package to help you get started prototyping your application's frontend using Bootstrap. However, feel free to add or remove packages from the package.json file as needed for your own application. You are not required to use the Bootstrap framework to build your Laravel application - it is provided as a good starting point for those who choose to use it.
 #### Database tables
