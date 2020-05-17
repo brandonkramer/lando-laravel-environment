@@ -60,7 +60,7 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ```
 ## What now?
-While writing commands with Lando for local Laravel development; replace php and prefix npm with lando for example `lando artisan migrate` or `lando npm install`
+While writing commands with Lando for local Laravel development; replace php and prefix npm and composer with lando for example `lando artisan migrate` or `lando npm install`
 ### Install Authentication
 https://laravel.com/docs/7.x/frontend
 
@@ -81,9 +81,9 @@ lando artisan ui react
 ```
 Generate login / registration scaffolding...
 ```
-php artisan ui bootstrap --auth
-php artisan ui vue --auth
-php artisan ui react --auth
+lando artisan ui bootstrap --auth
+lando artisan ui vue --auth
+lando artisan ui react --auth
 ```
 Run the following to compile your fresh scaffolding.
 ```
@@ -93,7 +93,7 @@ After installing the laravel/ui Composer package and generating the frontend sca
 #### Database tables
 Edit the .env file with your database configuration if you haven't configure it yet. Create database tables from the laravel/ui package:
 ```
-php artisan migrate
+lando artisan migrate
 ```
 ### Compiling Assets (Mix)
 https://laravel.com/docs/7.x/mix
