@@ -60,13 +60,20 @@ MAIL_FROM_NAME="${APP_NAME}"
 
 ```
 ## What now?
-While writing commands with Lando for local Laravel development; replace php, prefix npm and composer with lando for example `lando artisan migrate` or `lando npm install`
+While writing commands with Lando for local Laravel development; replace php and prefix npm with lando for example `lando artisan migrate` or `lando npm install`
 ### Install Authentication
 https://laravel.com/docs/7.x/frontend
 
 Since Laravel 6 the `artisan make:auth` command (Auth scaffolding) has been moved into a separate package. The scaffolding is now located in the laravel/ui Composer package, which may be installed using Composer:
 ``` 
+// Make sure you are in the app directory, if not then:
+cd app
+
+// Install package
 lando composer require laravel/ui
+
+// Run the following to compile your fresh scaffolding.
+lando npm install && lando npm run dev
 ```
 Once the laravel/ui package has been installed, you may install the frontend scaffolding using the ui Artisan command:
 
@@ -90,7 +97,7 @@ php artisan migrate
 ### Compiling Assets (Mix)
 https://laravel.com/docs/7.x/mix
 
-Before compiling your CSS, install your project's frontend dependencies using the Node package manager (NPM):
+Before compiling your CSS, if you haven't done it yet; install your project's frontend dependencies using the Node package manager (NPM):
 ```
 lando npm install
 ```
